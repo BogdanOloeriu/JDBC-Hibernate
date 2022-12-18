@@ -124,7 +124,7 @@ public class MarketingCampaignDao {
             preparedStatement.setDate(2,endDate);
             ResultSet resultSet = preparedStatement.executeQuery();
             while (resultSet.next()) {
-                MarketingCampaign marketingCampaign = new MarketingCampaign(null, resultSet.getString(2), resultSet.getDate(3), resultSet.getDouble(4));
+                MarketingCampaign marketingCampaign = new MarketingCampaign(resultSet.getInt(1), resultSet.getString(2), resultSet.getDate(3), resultSet.getDouble(4));
                 addDateList.add(marketingCampaign);
             }
             return addDateList;
