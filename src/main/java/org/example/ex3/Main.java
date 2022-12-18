@@ -48,6 +48,9 @@ public class Main {
                 statement.execute("insert into marketing_campaign (name,start_date,budget) values "+
                         "('Name1','2022-12-18',1000),('Name2','2022-10-15',2000),('Name3','2021-10-20',500)");
                 System.out.println("The table marketing_campaign was initialized!");
+
+            }else{
+                System.out.println("The tale was already initialized!");
             }
         } catch (SQLException e) {
             throw new RuntimeException(e);
