@@ -44,7 +44,7 @@ public class MarketingCampaign {
         return budget;
     }
 
-    public void setBudget(Double budget) {
+    public void setBudget(Double budget)  {
         this.budget = budget;
     }
 

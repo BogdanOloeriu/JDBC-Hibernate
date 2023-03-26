@@ -50,7 +50,7 @@ public class Main {
                 System.out.println("The table marketing_campaign was initialized!");
 
             }else{
-                System.out.println("The tale was already initialized!");
+                System.out.println("The table was already initialized!");
             }
         } catch (SQLException e) {
             throw new RuntimeException(e);
